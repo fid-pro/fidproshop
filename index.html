@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Vite + React</title>
+	<script type="module" src="/src/main.jsx"></script>
+	<script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+	<script src="node_modules/apexcharts/dist/apexcharts.min.js"></script>
+	<script src="node_modules/flowbite/dist/datepicker.min.js"></script>
+</head>
+
+<body>
+	<div id="root"></div>
+
+
+
+	<!-- <script>
+		window.addEventListener("load", function () {
+			let options = {
+				// set the formatter callback function to format data
+				yaxis: {
+					show: false,
+					labels: {
+						formatter: function (value) {
+							return '€' + value;
+						}
+					}
+				},
+				chart: {
+					height: "100%",
+					maxWidth: "100%",
+					type: "area",
+					fontFamily: "Inter, sans-serif",
+					dropShadow: {
+						enabled: false,
+					},
+					toolbar: {
+						show: false,
+					},
+				},
+				tooltip: {
+					enabled: true,
+					x: {
+						show: false,
+					},
+				},
+				fill: {
+					type: "gradient",
+					gradient: {
+						opacityFrom: 0.55,
+						opacityTo: 0,
+						shade: "#1C64F2",
+						gradientToColors: ["#1C64F2"],
+					},
+				},
+				dataLabels: {
+					enabled: false,
+				},
+				stroke: {
+					width: 6,
+				},
+				grid: {
+					show: false,
+					strokeDashArray: 4,
+					padding: {
+						left: 2,
+						right: 2,
+						top: -26
+					},
+				},
+				series: [
+					{
+						name: "Developer Edition",
+						data: [1500, 1418, 1456, 1526, 1356, 1256],
+						color: "#1A56DB",
+					},
+					{
+						name: "Designer Edition",
+						data: [643, 413, 765, 412, 1423, 1731],
+						color: "#7E3BF2",
+					},
+				],
+				xaxis: {
+					categories: ['01 Feb', '02 Feb', '03 Feb', '04 Feb', '05 Feb', '06 Feb', '07 Feb'],
+					labels: {
+						show: false,
+					},
+					axisBorder: {
+						show: false,
+					},
+					axisTicks: {
+						show: false,
+					},
+				},
+			}
+
+			if (document.getElementById("main-chart") && typeof ApexCharts !== 'undefined') {
+				const chart = new ApexCharts(document.getElementById("main-chart"), options);
+				chart.render();
+			}
+		});
+	</script> -->
+
+	<!-- <script>
+		// ApexCharts options and config
+		window.addEventListener("load", function () {
+			let options = {
+				// set grid lines to improve the readabilit of the chart, learn more here: https://apexcharts.com/docs/grid/
+				grid: {
+					show: true,
+					strokeDashArray: 4,
+					padding: {
+						left: 2,
+						right: 2,
+						top: -26
+					},
+				},
+				series: [
+					{
+						name: "Developer Edition",
+						data: [1500, 1418, 1456, 1526, 1356, 1256],
+						color: "#1A56DB",
+					},
+					{
+						name: "Designer Edition",
+						data: [643, 413, 765, 412, 1423, 1731],
+						color: "#7E3BF2",
+					},
+				],
+				chart: {
+					height: "100%",
+					maxWidth: "100%",
+					type: "area",
+					fontFamily: "Inter, sans-serif",
+					dropShadow: {
+						enabled: false,
+					},
+					toolbar: {
+						show: false,
+					},
+				},
+				tooltip: {
+					enabled: true,
+					x: {
+						show: false,
+					},
+				},
+				legend: {
+					show: true
+				},
+				fill: {
+					type: "gradient",
+					gradient: {
+						opacityFrom: 0.55,
+						opacityTo: 0,
+						shade: "#1C64F2",
+						gradientToColors: ["#1C64F2"],
+					},
+				},
+				dataLabels: {
+					enabled: false,
+				},
+				stroke: {
+					width: 6,
+				},
+				xaxis: {
+					categories: ['01 February', '02 February', '03 February', '04 February', '05 February', '06 February', '07 February'],
+					labels: {
+						show: false,
+					},
+					axisBorder: {
+						show: false,
+					},
+					axisTicks: {
+						show: false,
+					},
+				},
+				yaxis: {
+					show: false,
+					labels: {
+						formatter: function (value) {
+							return '$' + value;
+						}
+					}
+				},
+			}
+
+			if (document.getElementById("grid-chart") && typeof ApexCharts !== 'undefined') {
+				const chart = new ApexCharts(document.getElementById("grid-chart"), options);
+				chart.render();
+			}
+		});
+	</script> -->
+</body>
+
+</html>
